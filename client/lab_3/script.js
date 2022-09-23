@@ -18,24 +18,25 @@ const slidesArray = Array.from(slides);
 // Figure out how many slides we have available
 const totalSlides = slidesArray.length;
 
-function updateSlidePosition() {
-  // Using the .forEach array method, (array.forEach((element) => { per-element work goes here }))
-  // loop through all the slides in your slideArray
-  // and remove the 'visible' class from each classList
-  // then add a class 'hidden' to all of them
 
-  // outside your .forEach,
-  // add a 'visible' class to the slide at the current slidePosition in slides
-}
+  function updateSlidePosition() {
+    slidesArray.forEach((slide) => {
+      slide.classList.remove('visible');
+      slide.classList.add('hidden');
+    });
+
+    console.log(slidePosition);
+    slides[slidePosition].classList.remove('hidden')
+    slides[slidePosition].classList.add('visibe');
+  }
 
 function moveToNextSlide() {
-  /*
-    add an if statement here that checks
-    if you're already at the max number of slides
-    and if so, sets your slidePosition to the first index of an array
-    if not, set the slidePosition to the current position plus one
-  */
-  updateSlidePosition(); // this is how you call a function within a function
+  if (slidePosition === totalSlides - 1) {
+    slidePosition = 0;
+  } else {
+    slidePosition += 1;
+  }
+  updateSlidePosition();
 }
 function moveToPrevSlide() {
   // add your code in here for when you click the "prev" button
@@ -45,8 +46,13 @@ function moveToPrevSlide() {
     and if so, sets your slidePosition to the last slide position in totalSlides
     if not, set the slidePosition to the current position minus one
   */
-  updateSlidePosition();
-}
+    if (slidePosition === 0) {
+      slidePosition = totalSlides - 1;
+    } else {
+      slidePosition -= 1;
+    }
+      updateSlidePosition();
+  }
 
 /*
   These two functions have been assigned via "addEventListener"
