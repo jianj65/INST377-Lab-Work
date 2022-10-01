@@ -31,7 +31,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   background-color: hsla(0, 70%, 20%, 0.629);
-  color: rgb(34, 22, 81);
+  color: rgb(0, 0, 0);
 }
 
 
@@ -305,7 +305,7 @@ form label {
   /* Rules in here will only apply when a screen is the correct size */
   /* check it out by using your developer tools to shrink your screen-size */
   .container {
-    background-color: #367C2B;
+    background-color: #370707d7;
     flex-direction: column;
     justify-content: center;
     align-items: center;
