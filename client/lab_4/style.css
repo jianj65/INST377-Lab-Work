@@ -30,7 +30,7 @@ body {
   font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’, ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
   font-weight: 400;
   line-height: 1.5;
-  background-color: #367C2B;
+  background-color: hsla(0, 70%, 20%, 0.629);
 }
 
 
@@ -46,7 +46,7 @@ h2, h3 {
 }
 
 form {
-  accent-color: hsla(120, 100%, 50%, 0.482);
+  accent-color: hsla(0, 86%, 50%, 0.482);
 }
 
 /*
@@ -92,7 +92,7 @@ form {
   /* this will push other blocks out of the way */
 
   /* colors */
-  background-color: #FFDE00;
+  background-color: #0efed247;
   color: #000000;
 
   /* shapes */
@@ -128,14 +128,14 @@ form {
 }
 
 .left_section {
-  background-color: #FFDE00;
+  background-color: #0efed247;
   flex: 0 1 auto;
   margin: 1rem;
   padding: 1.5rem;
 }
 
 .right_section {
-  background-color: #FFDE00;
+  background-color: #0efed247;
   flex: 1 2 auto;
   margin: 1rem;
   align-items: center;
@@ -153,14 +153,14 @@ form {
 .footer {
   flex-shrink: 0;
   padding: 1rem;
-  background-color: #FFDE00;
+  background-color: #0efed247;
   font-size: 1.2rem;
   font-weight: 600;
   border: 2px dashed;
 }
 
 .footer a {
-  color: rgb(146, 138, 255);
+  color: rgb(255, 159, 138);
   text-decoration: underline;
 }
 
@@ -173,7 +173,7 @@ form {
   /* Hue, saturation, luminosity, alpha */
   background-color: hsla(0, 0%, 90%, 0.15);
   /* red, green, blue, alpha */
-  color: rgb(246, 169, 93);
+  color: rgb(211, 32, 22);
   text-decoration: none;
 }
 
