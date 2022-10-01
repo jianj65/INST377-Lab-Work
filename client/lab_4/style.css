@@ -31,7 +31,7 @@ body {
   font-weight: 400;
   line-height: 1.5;
   background-color: hsla(0, 70%, 20%, 0.629);
-  color: goldenrod;
+  color: rgb(22, 14, 54);
 }
 
 
@@ -93,7 +93,7 @@ form {
   /* this will push other blocks out of the way */
 
   /* colors */
-  background-color: #0ebafece;
+  background-color: #370707d7;
   color: #000000;
 
   /* shapes */
@@ -154,14 +154,14 @@ form {
 .footer {
   flex-shrink: 0;
   padding: 1rem;
-  background-color: #0ebafece;
+  background-color: #370707d7;
   font-size: 1.2rem;
   font-weight: 600;
   border: 2px dashed;
 }
 
 .footer a {
-  color: hsla(0, 70%, 20%, 0.629);
+  color: hsla(206, 71%, 20%, 0.629);
   text-decoration: underline;
 }
 
