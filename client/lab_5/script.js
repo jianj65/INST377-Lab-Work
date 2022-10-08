@@ -35,11 +35,11 @@ async function mainEvent() { // the async keyword means we can make API requests
       // It does not include any of your form values, though
     */
 
-    const results = await fetch('/api/foodServicePG?resto=');
+    const results = await fetch(`/api/foodServicePG?${new URLSearchParams(formProps)}`);
     /*
    ## Get request with query parameters
 
-      const results = await fetch(`/api/foodServicePG?${new URLSearchParams(formProps)}`);
+      const results = await fetch(
 
       The above request uses "string interpolation" to include an encoded version of your form values
       It works because it has a ? in the string
