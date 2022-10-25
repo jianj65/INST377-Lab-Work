@@ -63,7 +63,7 @@ router.route('/')
 // When we use these routes, we don't repeat ourselves, which reduces the risk of breakage
 
 /* /api/foodServicePG is the main route we use in labs */
-router.use('/foodServicesPG', foodServiceRoutes);
+router.use('/foodServicePG', foodServiceRoutes);
 
 /* /api/sqlDemo is an advanced set of files which demonstrate
   how to use your own database - it's based on using one from 327 for this class
